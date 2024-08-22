@@ -1,0 +1,16 @@
+CREATE TABLE "players" (
+	"id"	INTEGER,
+	"giocatore"	TEXT,
+	"ruolo"	TEXT,
+	"ruolo_M"	TEXT,
+	"squadra"	TEXT,
+	"quotazione_attuale"	INTEGER,
+	"quotazione_iniziale"	INTEGER,
+	"quotazione_differenza"	INTEGER,
+	"quotazione_attuale_M"	INTEGER,
+	"quotazione_iniziale_M"	INTEGER,
+	"quotazione_differenza_M"	INTEGER,
+	"FVM"	INTEGER,
+	"FVM_M"	INTEGER,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
