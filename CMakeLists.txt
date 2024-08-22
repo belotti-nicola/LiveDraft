@@ -12,6 +12,8 @@ qt_add_executable(appLiveDraft
     main.cpp
 )
 
+add_subdirectory(LiveDraftLib)
+
 qt_add_qml_module(appLiveDraft
     URI LiveDraft
     VERSION 1.0
@@ -32,6 +34,7 @@ set_target_properties(appLiveDraft PROPERTIES
 
 target_link_libraries(appLiveDraft
     PRIVATE Qt6::Quick
+    LiveDraftLib/sqlite3
 )
 
 include(GNUInstallDirs)
