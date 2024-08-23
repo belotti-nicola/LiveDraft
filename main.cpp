@@ -1,8 +1,7 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
-
 #include "LiveDraftLib/sqlite3/sqlite3.h"
 
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
 
 int main(int argc, char *argv[])
 {

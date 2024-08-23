@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(LiveDraft VERSION 0.1 LANGUAGES CXX)
+project(LiveDraft VERSION 0.1 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -34,7 +34,7 @@ set_target_properties(appLiveDraft PROPERTIES
 
 target_link_libraries(appLiveDraft
     PRIVATE Qt6::Quick
-    LiveDraftLib/sqlite3
+    LiveDraftLib
 )
 
 include(GNUInstallDirs)
